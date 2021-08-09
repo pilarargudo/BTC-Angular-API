@@ -1,0 +1,24 @@
+:host{
+  background-color: aqua;
+  padding: 3em 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  input{
+    all: unset;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 0.25em 0.25em 1em;
+    margin-bottom: 2em;
+    align-self: center;
+  }
+  h1, p{
+    align-self: center;
+  }
+  i{
+    font-size: 3em;
+    color: #fff;
+  }
+}

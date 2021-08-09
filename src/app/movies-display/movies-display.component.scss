@@ -1,0 +1,35 @@
+.movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-gap: 1em;
+  background: aqua;
+  position: relative;
+    .movie{
+      color: white;
+      text-decoration: unset;
+      background-size: cover;
+      position: relative;
+      padding: 1em;
+    
+    & > *{
+      z-index: 1;
+      position: relative;
+    }   
+    &::before{
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &:hover::before{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}

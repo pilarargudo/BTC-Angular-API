@@ -1,0 +1,13 @@
+
+<section class="moviesCategory">
+  <h1>{{ category | titlecase }} movies</h1>
+  <!-- pasamos datos de padres de hijos -->
+  <app-movies-display [filmsArray]="movies"></app-movies-display>
+  
+  <button type="button" (click)="moreMovies()" data-toggle="tooltip" title="Ver más películas"
+    class="btn btn-lg position-fixed">
+    <i class="fa fa-plus-circle"></i>
+  </button>
+
+</section>
+

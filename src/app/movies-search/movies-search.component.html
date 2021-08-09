@@ -1,0 +1,9 @@
+<input type="text" 
+      placeholder="Busca una película..."
+      [(ngModel)]="query"
+      (keyup)="search()">
+
+<h1 *ngIf="query && moviesFound.length !== 0">Resultados para <i>{{query}}</i></h1>
+<p *ngIf="query && moviesFound.length === 0">Película no encontrada</p>
+
+<app-movies-display [filmsArray]="moviesFound"></app-movies-display>

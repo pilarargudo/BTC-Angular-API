@@ -1,0 +1,22 @@
+.moviesCategory{
+  background-color: aqua;
+  color: white;
+  h1{
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  button{
+    border-radius: 3em;
+    bottom: 0.5em;
+    z-index: 99;
+    background-color: #ff00b1;
+    color: #fff;
+    right: 1em;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="movies">
+  <a href="/movie/{{ film.id }}" 
+      class="movie" 
+      *ngFor="let film of filmsArray"
+      [ngStyle]="film.backdrop_path && {'background-image': 'url(https://image.tmdb.org/t/p/w300/' + film.backdrop_path + ' )'}"
+      >
+      <h2>{{ film.title }}</h2>
+      <p>{{ film.release_date }}</p>
+     
+  </a>
+</div>
