@@ -5,7 +5,7 @@ creación de una APP
 capaz de interactuar con
 los Endpoints de la API
 proporcionada por
-[themoviedb]https://developers.themoviedb.org/3
+[themoviedb](https://developers.themoviedb.org/3)
 
 ## Tecnologías
 
